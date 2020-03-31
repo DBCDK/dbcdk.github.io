@@ -1,3 +1,6 @@
+---
+title: Orderreceipt
+---
 # Order Receipt
 Order Receipt is not a complete web service, but rather a specification of a
 service that must be exposed as part of a local library system to enable the

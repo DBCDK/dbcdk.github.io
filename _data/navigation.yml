@@ -3,7 +3,7 @@ pages:
   - title: OpenOrder webservice
     url: OpenOrderWebservice.md
   - title: iso18626
-    url: Iso18636.md
+    url: Iso18626.md
   - title: CULR
     url: Culrservice.md
   - title: Order Receipt

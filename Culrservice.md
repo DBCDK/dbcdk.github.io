@@ -1,3 +1,6 @@
+---
+title: CULR-system
+---
 # Description of the CULR-system
 
 CULR (Core User Library Registry) receives local user identifiers from affiliated data providers (eg. libraries) and assigns a global user id (GUID) for each unique user. Access to digital content products for library users depends on the user’s library affiliation. A service (eg. a local or national library service) who wants to give users access to digital content products, can obtain information from CULR, and then offer the users access to relevant content products as the user’s library- or municipality-affiliation warrants.

@@ -1,3 +1,6 @@
+---
+title: SaouWebService
+---
 # SAOU
 
 Service endpoint: https://saou.addi.dk/2.0/SaouWebService
