@@ -4,11 +4,11 @@ permalink: Saouservice.html
 ---
 # SAOU
 
-Service endpoint: https://saou.addi.dk/2.0/SaouWebService
+Service endpoint: [https://saou.addi.dk/2.0/SaouWebService](https://saou.addi.dk/2.0/SaouWebService)
 
-Example client: https://saou.addi.dk/2.0/
+Example client: [https://saou.addi.dk/2.0/](https://saou.addi.dk/2.0/)
 
-WSDL: https://saou.addi.dk/2.0/SaouWebService?wsdl
+WSDL: [https://saou.addi.dk/2.0/SaouWebService?wsdl](https://saou.addi.dk/2.0/SaouWebService?wsdl)
 
 ## Description of SAOU
 
