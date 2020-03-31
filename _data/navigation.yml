@@ -1,0 +1,12 @@
+---
+pages:
+  - title: OpenOrder webservice
+    url: OpenOrderWebservice.md
+  - title: iso18626
+    url: Iso18636.md
+  - title: CULR
+    url: Culrservice.md
+  - title: Order Receipt
+    url: Orderreceipt.md
+  - title: Saouservice
+    url: Saouservice.md
