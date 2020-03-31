@@ -1,5 +1,6 @@
 ---
 title: CULR-system
+permalink: Culrservice.html
 ---
 # Description of the CULR-system
 

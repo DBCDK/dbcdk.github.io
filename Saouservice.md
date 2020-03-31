@@ -1,5 +1,6 @@
 ---
 title: SaouWebService
+permalink: Saouservice.html
 ---
 # SAOU
 

@@ -1,5 +1,6 @@
 ---
 title: Orderreceipt
+permalink: Orderreceipt.html
 ---
 # Order Receipt
 Order Receipt is not a complete web service, but rather a specification of a

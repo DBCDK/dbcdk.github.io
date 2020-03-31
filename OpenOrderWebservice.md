@@ -1,5 +1,6 @@
 ---
 title: OpenOrder-webservice
+permalink: OpenOrderWebservice.html
 ---
 # Description of OpenOrder-webservice
 
