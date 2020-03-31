@@ -20,7 +20,7 @@ CheckOrderPolicy checks that a given agency will allow for enduser ill on the ma
 
 PlaceOrder creates an order in the orderSystem. It implicitly calls checkOrderPolicy to test if the given agency accepts ill on the pid supplied.
 
-Web Service: [https://openorder.addi.dk/](https://openorder.addi.dk/)
+Web Service: [https://openorder.addi.dk/](https://openorder.addi.dk/) \
 Example client: [https://openorder.addi.dk/copa-rs/](https://openorder.addi.dk/copa-rs/)
 
 ## License Terms
