@@ -25,7 +25,7 @@ requests can be found below.
 | Version | Environment | Endpoint                                           | WSDL | XSD |
 |---------|-------------|----------------------------------------------------|------|-----|
 | 2.34    | production  | [http://openagency.addi.dk/2.34/](http://openagency.addi.dk/2.34/) | [http://openagency.addi.dk/2.34/?wsdl](http://openagency.addi.dk/2.34/?wsdl) | [http://openagency.addi.dk/2.34/openagency.xsd](http://openagency.addi.dk/2.34/openagency.xsd) |
-| 2.34    | extern test | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/?wsdl](http://openagency.addi.dk/test_2.34/?wsdl) | [http://openagency.addi.dk/test_2.34/openagency.xsd](http://test_openagency.addi.dk/2.34/openagency.xsd) |
+| 2.34    | extern test | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/?wsdl](http://openagency.addi.dk/test_2.34/?wsdl) | [http://openagency.addi.dk/test_2.34/openagency.xsd](http://openagency.addi.dk/test_2.34/openagency.xsd) |
 | 2.34    | staging     | [http://openagency.addi.dk/next_2.34/](http://openagency.addi.dk/next_2.34/) | [http://openagency.addi.dk/next_2.34/?wsdl](http://openagency.addi.dk/next_2.34/?wsdl) | [http://openagency.addi.dk/next_2.34/openagency.xsd](http://openagency.addi.dk/next_2.34/openagency.xsd) |
 
 
