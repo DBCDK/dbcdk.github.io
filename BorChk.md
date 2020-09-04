@@ -7,7 +7,7 @@ permalink: BorChk.html
 ## Introduction
 Lånertjek. Bruges til at tjekke om en bruger er indmeldt på et givent bibliotek, og om biblioteket er beliggende i brugerens hjemkommune. 
 
-Dokumentation: http://www.danbib.dk/lanertjek-fjernadgang
+Dokumentation: [http://www.danbib.dk/lanertjek-fjernadgang](http://www.danbib.dk/lanertjek-fjernadgang)
 
 ## Versions
 
