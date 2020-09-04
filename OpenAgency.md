@@ -22,14 +22,14 @@ requests can be found below.
 
 ## Versions
 
-| Version | Environment | Endpoint                                           | WSDL | XSD |
-|---------|-------------|----------------------------------------------------|------|-----|
-| 2.34    | production  | [http://openagency.addi.dk/2.34/](http://openagency.addi.dk/2.34/) | [http://openagency.addi.dk/2.34/?wsdl](http://openagency.addi.dk/2.34/?wsdl) | [http://openagency.addi.dk/2.34/openagency.xsd](http://openagency.addi.dk/2.34/openagency.xsd) |
-| 2.34    | extern test | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/?wsdl](http://openagency.addi.dk/test_2.34/?wsdl) | [http://openagency.addi.dk/test_2.34/openagency.xsd](http://openagency.addi.dk/test_2.34/openagency.xsd) |
-| 2.34    | staging     | [http://openagency.addi.dk/next_2.34/](http://openagency.addi.dk/next_2.34/) | [http://openagency.addi.dk/next_2.34/?wsdl](http://openagency.addi.dk/next_2.34/?wsdl) | [http://openagency.addi.dk/next_2.34/openagency.xsd](http://openagency.addi.dk/next_2.34/openagency.xsd) |
-| 3.0    | production  | [http://openagency.addi.dk/3.0/](http://openagency.addi.dk/3.0/) | [http://openagency.addi.dk/3.0/?wsdl](http://openagency.addi.dk/3.0/?wsdl) | [http://openagency.addi.dk/3.0/openagency.xsd](http://openagency.addi.dk/3.0/openagency.xsd) |
-| 3.0    | extern test | [http://openagency.tst.addi.dk/3.0/](http://openagency.tst.addi.dk/3.0/) | [http://openagency.tst.addi.dk/3.0/OpenAgency?wsdl](http://openagency.tst.addi.dk/3.0/OpenAgency?wsdl) | [http://openagency.tst.addi.dk/3.0/OpenAgency?xsd=1](http://openagency.tst.addi.dk/3.0/OpenAgency?xsd=1) |
-| 3.0    | staging     | [http://openagency.stg.addi.dk/3.0/](http://openagency.stg.addi.dk/3.0/) | [http://openagency.stg.addi.dk/3.0/OpenAgency?wsdl](http://openagency.stg.addi.dk/3.0/OpenAgency?wsdl) | [http://openagency.stg.addi.dk/3.0/OpenAgency?xsd=1](http://openagency.stg.addi.dk/3.0/OpenAgency?xsd=1) |
+| Version | Environment | Example client | Endpoint | WSDL | XSD |
+|---------|-------------|----------------|----------|------|-----|
+| 2.34    | production  | [http://openagency.addi.dk/2.34/](http://openagency.addi.dk/2.34/) | [http://openagency.addi.dk/2.34/](http://openagency.addi.dk/2.34/) | [http://openagency.addi.dk/2.34/?wsdl](http://openagency.addi.dk/2.34/?wsdl) | [http://openagency.addi.dk/2.34/openagency.xsd](http://openagency.addi.dk/2.34/openagency.xsd) |
+| 2.34    | extern test | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/?wsdl](http://openagency.addi.dk/test_2.34/?wsdl) | [http://openagency.addi.dk/test_2.34/openagency.xsd](http://openagency.addi.dk/test_2.34/openagency.xsd) |
+| 2.34    | staging     | [http://openagency.addi.dk/next_2.34/](http://openagency.addi.dk/next_2.34/) | [http://openagency.addi.dk/next_2.34/](http://openagency.addi.dk/next_2.34/) | [http://openagency.addi.dk/next_2.34/?wsdl](http://openagency.addi.dk/next_2.34/?wsdl) | [http://openagency.addi.dk/next_2.34/openagency.xsd](http://openagency.addi.dk/next_2.34/openagency.xsd) |
+| 3.0    | production  | [http://openagency.addi.dk/3.0/](http://openagency.addi.dk/3.0/) | [http://openagency.addi.dk/3.0/OpenAgency](http://openagency.addi.dk/3.0/OpenAgency) | [http://openagency.addi.dk/3.0/OpenAgency?wsdl](http://openagency.addi.dk/3.0/OpenAgency?wsdl) | [http://openagency.addi.dk/3.0/OpenAgency?xsd=1](http://openagency.addi.dk/3.0/OpenAgency?xsd=1) |
+| 3.0    | extern test | [http://openagency.tst.addi.dk/3.0/](http://openagency.tst.addi.dk/3.0/) | [http://openagency.tst.addi.dk/3.0/OpenAgency](http://openagency.tst.addi.dk/3.0/OpenAgency) | [http://openagency.tst.addi.dk/3.0/OpenAgency?wsdl](http://openagency.tst.addi.dk/3.0/OpenAgency?wsdl) | [http://openagency.tst.addi.dk/3.0/OpenAgency?xsd=1](http://openagency.tst.addi.dk/3.0/OpenAgency?xsd=1) |
+| 3.0    | staging     | [http://openagency.stg.addi.dk/3.0/](http://openagency.stg.addi.dk/3.0/) | [http://openagency.stg.addi.dk/3.0/OpenAgency](http://openagency.stg.addi.dk/3.0/OpenAgency) | [http://openagency.stg.addi.dk/3.0/OpenAgency?wsdl](http://openagency.stg.addi.dk/3.0/OpenAgency?wsdl) | [http://openagency.stg.addi.dk/3.0/OpenAgency?xsd=1](http://openagency.stg.addi.dk/3.0/OpenAgency?xsd=1) |
 
 ## Service operations
 ***Automation***
