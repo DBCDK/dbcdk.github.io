@@ -62,7 +62,7 @@ the Open Order sevice.
 * agencyId: library code, like DK-790900
 * orderMaterialType: one of: cdrom, journal, monograph, music, newspaper, video
 * ownedByAgency: true or false
-* trackingId:
+* trackingId
 
 ***Find Library***
 
