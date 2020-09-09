@@ -36,11 +36,21 @@ This operation provides information about the agencies' preferences regarding
 automatic forwarding of end user requests as ill requests to other agencies.
 This operation is used by the Open Resource Sharing system.
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* autService: autPotential, autRequester or autProvider
+* materialType: integer
+* trackingId
+
 ***Encryption***
 
 Operation for looking up encryption information related to a specific email
 address, used when sending encrypted emails to an agency. This operation is used
 by the Open Resource Sharing system.
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* email: make a guess
+* trackingId
 
 ***End User Order Policy***
 
@@ -48,21 +58,70 @@ This operation makes it possible to look up whether a specific agency wants to
 recieve orders from endusers on this type of material. The operation is used by
 the Open Order sevice.
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* orderMaterialType: one of: cdrom, journal, monograph, music, newspaper, video
+* ownedByAgency: true or false
+* trackingId:
+
 ***Find Library***
 
 Operation for searching general contact information and alike about a given library
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* agencyAddress: library address
+* agencyName: library name
+* postalCode: 
+* city:
+* stilNumber:
+* anyField:
+* libraryType: Folkebibliotek, Forskningsbibliotek, Skolebibliotek or empty
+* libraryStatus: include libraries: alle, usynlig, slettet or empty
+* pickupAllowed: Indicator whether materials can be picked up at the given branch/agency
+* sort: agencyId, agencyName, agencyAddress, postalCode, city, libraryType
+* trackingId
 
 ***Get CULR Profile***
 
 Retrieve information about a library's CULR-profile
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* profileName: Name of profile to fetch
+* requesterIp: IP of requester
+* trackingId
+
 ***Get Registry Info***
 
 Provides contact information, server adresses and ILL-parameters for local registry updates
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* agencyName: library name
+* lastUpdated: date
+* libraryType: Folkebibliotek, Forskningsbibliotek or empty
+* libraryStatus: include libraries: alle, usynlig, slettet or empty
+* trackingId
+
 ***Get SAOU License Info***
 
 Retrieve information on how to to access remote content
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
+
+***Library Rules***
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
+
+***Library Type List***
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* trackingId
 
 ***Name List***
 
@@ -70,10 +129,20 @@ This operation is for receiving a list of agency ids (ISIL numbers) and names of
 either public libraries (Folkebibliotek) or university and research libraries
 (Forskningsbibliotek).
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* libraryType: Folkebibliotek, Forskningsbibliotek or empty
+* trackingId
+
 ***Open Search Profile***
 
 This operation retrieves information about which data sources are included in a
 given library's profile when the searching with Open Search.
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* profileName: Name of profile to fetch
+* profileVersion: 2 or 3
+* trackingId
 
 ***Pickup Agency List***
 
@@ -81,40 +150,75 @@ This operation can be used for retrieving a list of all public and/or research
 libraries including contact information, pickup agency information and opening
 hours.
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* agencyAddress: library address
+* agencyName: library name
+* postalCode:
+* city:
+* libraryType: Folkebibliotek, Forskningsbibliotek or empty
+* libraryStatus: include libraries: alle, usynlig, slettet or empty
+* pickupAllowed: Indicator whether materials can be picked up at the given branch/agency
+* trackingId
+
 ***Remote Access***
 
 Using this operation, you can get information about an agency's subscriptions to
 licensed resources with remote access.
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
 
 ***Request order***
 
 This operation retrieves a prioritised list of which agencies materials must be
 ordered from for a given agency.
 
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
+
+***Search Collection***
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
+
 ***Service***
 
 The service operation looks up information about a specific agency regarding
 various services provided by that agency. It can also look up directory
-information about an agency. The following services are available (most of the
+information about an agency. The following services are available (most of them
 are used in ORS):
 
-* information: directory information about an agency, e.g. address and branch information
-* serverInformation: information about an agency's z39.50 server
-* orsItemRequest: whether an agency wants to receive ILL requests and how they want to receive the messages
-* orsAnswer: whether an agency wants to receive ILL answers and how they want to receive the messages
-* orsReceipt: whether an agency wants to receive receipts on their ILL requests and how they want to receive the messages
-* orsCancel: whether an agency wants to receive cancellations of ILL requests and how they want to receive the messages
-* orsCancelReply: whether an agency wants to receive replies to cancellations of ILL requests and how they want to receive the messages
-* orsShipping: whether an agency wants to receive shipping information and how they want to receive the messages
-* orsRenew: whether an agency wants to receive renewals on ILL loans and how they want to receive the messages
-* orsRenewAnswer: whether an agency wants to receive answers to renewals on ILL loans  and how they want to receive the messages
-* orsEndUserRequest: whether an agency wants to receive requests from end users on their own material and how they want to receive the messages
-* orsEndUserIllRequest: whether an agency wants to receive requests from end users on material owned by other agencies and how they want to receive the messages
-* orsCancelRequestUser: whether an agency wants to receive cancellations of requests from end users and how they want to receive the messages
-* orsRenewItemUser: whether an agency wants to receive renewals of loans from end users and how they want to receive the messages
-* orsLookupUser: whether an agency wants to receive lookup user requests and how they wamt to receive the messages
-* userOrderParameters: which order parameters must be present for local and ILL orders of various material types
-* userParameters: what type of information is needed for authetication of the end user, e.g when the user wants to place an item request (cpr, common, barcode, cardno, or optional)
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* service: 
+  * information: directory information about an agency, e.g. address and branch information
+  * orsItemRequest: whether an agency wants to receive ILL requests and how they want to receive the messages
+  * orsAnswer: whether an agency wants to receive ILL answers and how they want to receive the messages
+  * orsReceipt: whether an agency wants to receive receipts on their ILL requests and how they want to receive the messages
+  * orsCancel: whether an agency wants to receive cancellations of ILL requests and how they want to receive the messages
+  * orsCancelReply: whether an agency wants to receive replies to cancellations of ILL requests and how they want to receive the messages
+  * orsShipping: whether an agency wants to receive shipping information and how they want to receive the messages
+  * orsRenew: whether an agency wants to receive renewals on ILL loans and how they want to receive the messages
+  * orsRenewAnswer: whether an agency wants to receive answers to renewals on ILL loans  and how they want to receive the messages
+  * orsEndUserRequest: whether an agency wants to receive requests from end users on their own material and how they want to receive the messages
+  * orsEndUserIllRequest: whether an agency wants to receive requests from end users on material owned by other agencies and how they want to receive the messages
+  * orsCancelRequestUser: whether an agency wants to receive cancellations of requests from end users and how they want to receive the messages
+  * orsRenewItemUser: whether an agency wants to receive renewals of loans from end users and how they want to receive the messages
+  * orsLookupUser: whether an agency wants to receive lookup user requests and how they wamt to receive the messages
+  * serverInformation: information about an agency's z39.50 server
+  * userOrderParameters: which order parameters must be present for local and ILL orders of various material types
+  * userParameters: what type of information is needed for authetication of the end user, e.g when the user wants to place an item request (cpr, common, barcode, cardno, or optional)
+* trackingId
+
+***Show Order***
+
+* authentication: login triple in subtags: groupIdAut, passwordAut, userIdAut
+* agencyId: library code, like DK-790900
+* trackingId
 
 ## License Terms
 The web service is published under the [GPLv3](http://gplv3.fsf.org/) license.
