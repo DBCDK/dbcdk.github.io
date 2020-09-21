@@ -30,7 +30,7 @@ requests can be found below.
 
 ## 3.0 and 2.34 differences
 
-Since the introduction of version 3.0 a number of changes has been introduced.
+Since the introduction of version 3.0 a number of changes has been made.
 
 ### 2.34:
 * Can accept requests in XML (SOAP) and as URL parameters (URL parameter example: http://openagency.addi.dk/2.34/?action=endUserOrderPolicy&agencyId=725300&orderMaterialType=monograph&ownedByAgency=false&outputType=xml)
