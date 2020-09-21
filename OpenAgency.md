@@ -37,8 +37,8 @@ Since the introduction of version 3.0 a number of changes has been made.
 * Can return answers in XML (SOAP) and JSON (badgerfish variant)
 
 ### 3.0:
-* Can accept XML (SOAP) requests
-* Can return XML (SOAP) answers 
+* Will only accept XML (SOAP) requests
+* Will only return XML (SOAP) answers 
 * Removed the following elements from the XSD:
   * Callback
   * OutputType
