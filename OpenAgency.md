@@ -15,6 +15,8 @@ about a library (contact information, opening hours).
 Available versions of the service and corresponding WSDL, XSD and sample
 requests can be found below.
 
+OpenAgency 3.0 is considered the primary production version as per. October 1, 2020.
+
 <span style="color:red">End-of-life date for versions older than 3.0 is January 1, 2021.</span>
 
 ## Versions
