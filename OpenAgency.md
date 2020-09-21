@@ -12,11 +12,26 @@ These include technical information such as encryption parameters, order
 policies for use in ORS, Open Search profiles as well as practical information
 about a library (contact information, opening hours).
 
-Supported communication methods are SOAP, HTTP POST (XML-requests) and HTTP GET
-(URL-requests). Supported output formats are SOAP and XML.
-
 Available versions of the service and corresponding WSDL, XSD and sample
 requests can be found below.
+
+<span style="color:red">End-of-life date for versions older than 3.0 is January 1, 2021.</span>
+
+## 3.0 and 2.34 differences
+
+Since the introduction of version 3.0 a number of changes has been introduced.
+
+### 2.34:
+* Can accept requests in XML (SOAP) and as URL parameters (URL parameter example: http://openagency.addi.dk/2.34/?action=endUserOrderPolicy&agencyId=725300&orderMaterialType=monograph&ownedByAgency=false&outputType=xml)
+* Can return answers in XML (SOAP) and JSON (badgerfish variant)
+ 
+### 3.0:
+* Can accept XML (SOAP) requests
+* Can return XML (SOAP) answers 
+* Removed the following elements from the XSD:
+  * Callback
+  * OutputType
+  * Search via coordinates in FindLibrary
 
 ## Versions
 
