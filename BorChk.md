@@ -15,8 +15,7 @@ BorChk 3.0 is considered the primary production version.
 
 _Unless specifically mentioned all information is about 3.0._
 
-<span style="color:red">Versions older than 3.0 will go end-of-life soon.</span>
-
+<span style="color:red">End-of-life date for versions older than 3.0 is April 1, 2021.</span>
 
 | Version | Environment | Endpoint                                           | WSDL | XSD |
 |---------|-------------|----------------------------------------------------|------|-----|
