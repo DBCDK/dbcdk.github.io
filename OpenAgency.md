@@ -2,10 +2,10 @@
 title OpenAgency
 permalink: OpenAgency.html
 ---
-# Description of the Open Agency service
+# Description of the OpenAgency service
 
 ## General description
-Open Agency is a web service interface for looking up various parameters for
+OpenAgency is a web service interface for looking up various parameters for
 libraries and other service vendors in the VIP-database
 ([https://vip.dbc.dk](https://vip.dbc.dk)).
 These include technical information such as encryption parameters, order
@@ -15,30 +15,16 @@ about a library (contact information, opening hours).
 Available versions of the service and corresponding WSDL, XSD and sample
 requests can be found below.
 
-OpenAgency 3.0 is considered the primary production version as per. October 1, 2020.
-
-<span style="color:red">End-of-life date for versions older than 3.0 is January 1, 2021.</span>
-
 ## Versions
 
 | Version | Environment | Endpoint | WSDL | XSD |
 |---------|-------------|----------|------|-----|
-| 2.34    | production  | [http://openagency.addi.dk/2.34/](http://openagency.addi.dk/2.34/) | [http://openagency.addi.dk/2.34/?wsdl](http://openagency.addi.dk/2.34/?wsdl) | [http://openagency.addi.dk/2.34/openagency.xsd](http://openagency.addi.dk/2.34/openagency.xsd) |
-| 2.34    | extern test | [http://openagency.addi.dk/test_2.34/](http://openagency.addi.dk/test_2.34/) | [http://openagency.addi.dk/test_2.34/?wsdl](http://openagency.addi.dk/test_2.34/?wsdl) | [http://openagency.addi.dk/test_2.34/openagency.xsd](http://openagency.addi.dk/test_2.34/openagency.xsd) |
-| 2.34    | staging     | [http://openagency.addi.dk/next_2.34/](http://openagency.addi.dk/next_2.34/) | [http://openagency.addi.dk/next_2.34/?wsdl](http://openagency.addi.dk/next_2.34/?wsdl) | [http://openagency.addi.dk/next_2.34/openagency.xsd](http://openagency.addi.dk/next_2.34/openagency.xsd) |
 | 3.0    | production  | [http://openagency.addi.dk/3.0/](http://openagency.addi.dk/3.0/) | [http://openagency.addi.dk/3.0/soap?wsdl](http://openagency.addi.dk/3.0/soap?wsdl) | [http://openagency.addi.dk/3.0/soap?xsd=1](http://openagency.addi.dk/3.0/soap?xsd=1) |
 | 3.0    | extern test | [http://openagency.test.addi.dk/3.0/](http://openagency.test.addi.dk/3.0/) | [http://openagency.test.addi.dk/3.0/soap?wsdl](http://openagency.test.addi.dk/3.0/soap?wsdl) | [http://openagency.test.addi.dk/3.0/soap?xsd=1](http://openagency.test.addi.dk/3.0/soap?xsd=1) |
 | 3.0    | staging     | [http://openagency.stg.addi.dk/3.0/](http://openagency.stg.addi.dk/3.0/) | [http://openagency.stg.addi.dk/3.0/soap?wsdl](http://openagency.stg.addi.dk/3.0/soap?wsdl) | [http://openagency.stg.addi.dk/3.0/soap?xsd=1](http://openagency.stg.addi.dk/3.0/soap?xsd=1) |
 
-## 3.0 and 2.34 differences
-
-Since the introduction of version 3.0 a number of changes has been made.
-
-### 2.34:
-* Can accept requests in XML (SOAP) and as URL parameters (URL parameter example: http://openagency.addi.dk/2.34/?action=endUserOrderPolicy&agencyId=725300&orderMaterialType=monograph&ownedByAgency=false&outputType=xml)
-* Can return answers in XML (SOAP) and JSON (badgerfish variant)
-
-### 3.0:
+### 3.0 info
+A few changes has been made to version 3.0 of the service compared to the older 2.34 version (not available any more). 
 * Will only accept XML (SOAP) requests
 * Will only return XML (SOAP) answers 
 * Removed the following elements from the XSD:
