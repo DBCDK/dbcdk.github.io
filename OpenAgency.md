@@ -26,9 +26,9 @@ requests can be found below.
 ### 3.1 info
 OpenAgency 3.1 is currently in development and will be available soon.
 
-The following changes is planned for version 3.1:
+The following change is planned for version 3.1:
 * The pickupAgency element of the findLibrary, getRegistryInfo and pickupAgencyList
-methods is expanded with a routeNumber element.
+methods are expanded with a routeNumber element.
 
 ### 3.0 info
 A few changes has been made to version 3.0 of the service compared to the older 2.34 version (not available any more). 
