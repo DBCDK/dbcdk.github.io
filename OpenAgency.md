@@ -23,8 +23,6 @@ OpenAgency 3.1 is considered the primary production version.
 
 <span style="color:red">End-of-life date for versions older than 3.1 is 1/10/2021.</span>
 
-## Versions
-
 | Version | Environment | Endpoint | WSDL | XSD |
 |---------|-------------|----------|------|-----|
 | 3.1    | production  | [http://openagency.addi.dk/3.1/](http://openagency.addi.dk/3.1/) | [http://openagency.addi.dk/3.1/soap?wsdl](http://openagency.addi.dk/3.1/soap?wsdl) | [http://openagency.addi.dk/3.1/soap?xsd=1](http://openagency.addi.dk/3.1/soap?xsd=1) |
