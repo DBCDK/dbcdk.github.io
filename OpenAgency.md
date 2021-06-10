@@ -19,7 +19,7 @@ requests can be found below.
 
 OpenAgency 3.1 is considered the primary production version.
 
-<span style="color:red">End-of-life date for versions older than 3.1 is October 1st, 2021.</span>
+<span style="color:red">End-of-life date for versions older than 3.1 is 1/10/2021.</span>
 
 ## Versions
 
@@ -33,7 +33,7 @@ OpenAgency 3.1 is considered the primary production version.
 | 3.0    | staging     | [http://openagency.stg.addi.dk/3.0/](http://openagency.stg.addi.dk/3.0/) | [http://openagency.stg.addi.dk/3.0/soap?wsdl](http://openagency.stg.addi.dk/3.0/soap?wsdl) | [http://openagency.stg.addi.dk/3.0/soap?xsd=1](http://openagency.stg.addi.dk/3.0/soap?xsd=1) |
 
 ### 3.1 info
-OpenAgency 3.1 is available as of 10/06/2021 (10th of June 2021).
+OpenAgency 3.1 is available as of 10/06/2021.
 
 The following change is new for version 3.1:
 * The pickupAgency element of the findLibrary, getRegistryInfo and pickupAgencyList
