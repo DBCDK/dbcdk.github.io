@@ -36,7 +36,7 @@ OpenAgency 3.1 is considered the primary production version.
 OpenAgency 3.1 is available as of 10/06/2021.
 
 The following change is new for version 3.1:
-* The pickupAgency element is expanded with a routeNumber element. This element is used by the findLibrary, getRegistryInfo and pickupAgencyList methods.
+* The pickupAgency element is expanded with a routeNumber element. This element is used by the findLibrary, getRegistryInfo, and pickupAgencyList methods.
 
 ### 3.0 info
 A few changes has been made to version 3.0 of the service compared to the older 2.34 version (not available any more). 
