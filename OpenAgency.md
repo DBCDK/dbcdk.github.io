@@ -15,7 +15,7 @@ about a library (contact information, opening hours).
 Available versions of the service and corresponding WSDL, XSD and sample
 requests can be found below.
 
-All date format are DD/MM/YYYY.
+All date formats are DD/MM/YYYY.
 
 ## Versions
 
