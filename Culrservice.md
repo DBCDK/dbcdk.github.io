@@ -10,10 +10,13 @@ CULR (Core User Library Registry) receives local user identifiers from affiliate
 
 | Version | Endpoint                                           | Environment    | Start of life | End of life | WSDL |
 |---------|----------------------------------------------------|----------------|---------------|-------------|------|
+| 1.5     | https://culr.addi.dk/1.5/CulrWebService            | production     | 20210623      |             | https://culr.addi.dk/1.5/CulrWebService?wsdl
+| 1.5     | https://culrstaging.addi.dk/1.5/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.5/CulrWebService?wsdl
 | 1.4     | https://culr.addi.dk/1.4/CulrWebService            | production     | 20181126      |             | https://culr.addi.dk/1.4/CulrWebService?wsdl
 | 1.4     | https://culrstaging.addi.dk/1.4/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.4/CulrWebService?wsdl
-| ~~1.3~~ | ~~https://culr.addi.dk/1.3/CulrWebService~~        | ~~production~~ |               | 20200101    | ~~https://culr.addi.dk/1.3/CulrWebService?wsdl~~
-| ~~1.3~~ | ~~https://culrstaging.addi.dk/1.3/CulrWebService~~ | ~~staging~~    |               |             | ~~https://culrstaging.addi.dk/1.3/CulrWebService?wsdl~~|
+
+## Changelist
+Version 1.5 adds the method ***hasCulrAccount***
 
 ## System Architecture
 CULR consists of three components:
@@ -29,8 +32,8 @@ DBC’ VIP-base (https://vip.dbc.dk) in section J. CULR profile.
 ## Definitions
 A *Service* uses CULR to obtain user information: Potential services could
 for instance be end user access components or common digital library
-    content resources. Services have read only-rights and cannot add,
-    delete, or modify data.
+content resources. Services have read only-rights and cannot add,
+delete, or modify data.
 
 A *Provider* is a provider of data to CULR, ie. an institution (such as a
 library) that have user accounts attached. It may be a public library, an
@@ -62,7 +65,8 @@ access). Credentials must be stated in any request for the service.
 ## Web service operations
 There are two categories of operations in the CULR web service.
 
-The first category is intended for services and consists of two operations: getAccountsByGlobalId and getAccountsByLocalId.
+The first category is intended for services and consists of two operations:
+getAccountsByGlobalId and getAccountsByLocalId.
 
 The second is intended for providers and consists of the following
 operations: createAccount, deleteAccount, updateAccount, mergePatrons, and
@@ -98,13 +102,13 @@ municipalityNo if set.
 Deletes the account and checks if there are other accounts associated with
 the patron. If not the patron is deleted. If there are other accounts
 associated with the patron, the patron is not changed. This implies that a
-patron's municipality affiliation is not necessarily deleted even if the
-user's account at a given agency is deleted from CULR.
+patrons municipality affiliation is not necessarily deleted even if the
+users account at a given agency is deleted from CULR.
 
 ***updateAccount:***
 
 Find the requested account and the associated patron and set municipality
-number for the patron. If municipalityNo is empty, the patron's
+number for the patron. If municipalityNo is empty, the patrons
 municipality affiliation is deleted.
 
 ***mergePatrons:***
@@ -114,7 +118,7 @@ accountToMergeWith must have userIdType CPR, and accountToBeMerged must
 have userIdType LOCAL or UNILOGIN. If merge is a success, accountToBeMerged
 will now be linked to the patron which accountToMergeWith is linked to.
 This implies that if the patron which accountToBeMerged was linked to
-before merge contains a CPRor municipalityNo, the account is no longer
+before merge contains a CPR or municipalityNo, the account is no longer
 linked to this.
 
 ***getAccountFromProvider:***
@@ -123,4 +127,10 @@ Retrieve the requested account and GUID, but not the related accounts.
 
 ***deleteAllAccountsByProvider:***
 
-Delete all accounts from a specific agency
+Delete all accounts from a specific agency.
+
+***hasCulrAccount:***
+
+***New in 1.5***.
+Takes a GUID as input and return true if there is an active Patron with that
+GUID in CULR otherwise false.
