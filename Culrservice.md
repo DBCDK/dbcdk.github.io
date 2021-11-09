@@ -23,14 +23,14 @@ CULR (Core User Library Registry) receives local user identifiers from affiliate
 ### Version 1.6: Adds the the new UID type ***CICEROUID***
 
 The uid is to be used in conjunction with the local type and will behave the same way as CPR with local type users.
-The difference being that CICOERUID will not have persistent GUIDs, meaning that if you delete a  CICERUID account, the user will not get the same GUID when created with the same values. 
+The difference being that CICEROUID will not have persistent GUIDs, meaning that if you delete a CICEROUID account, the user will not get the same GUID when created with the same values. 
 
 The CICEROUID change also changes the API of the webservice. The following operations is affected.
 
 ***getAccountsByGlobalId***
 ***createAccount***
 
-Both operations now accepts a globalUid complex type, and the uidType of the globalUID has been expanded to accept CICEROUID aswell as CPR.
+Both operations now accepts a globalUID complex type, and the uidType of the globalUID has been expanded to accept CICEROUID aswell as CPR.
 All other operations should remain as before.
   
 
