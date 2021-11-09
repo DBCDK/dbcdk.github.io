@@ -30,7 +30,7 @@ The CICEROUID change also changes the API of the webservice. The following opera
 ***getAccountsByGlobalId***
 ***createAccount***
 
-Both operations now accepts a globalUID complex type, and the uidType of the globalUID has been expanded to accept CICEROUID aswell as CPR.
+Both operations now accepts a globalUID complex type, and the uidType of the globalUID has been expanded to accept CICEROUID as well as CPR.
 All other operations should remain as before.
   
 
