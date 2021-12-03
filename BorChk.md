@@ -11,38 +11,11 @@ Dokumentation: [http://www.danbib.dk/lanertjek-fjernadgang](http://www.danbib.dk
 
 ## Versions
 
-BorChk 3.0 is considered the primary production version.
-
-_Unless specifically mentioned all information is about 3.0._
-
-<span style="color:red">End-of-life date for versions older than 3.0 is April 1, 2021.</span>
-
 | Version | Environment | Endpoint                                           | WSDL | XSD |
 |---------|-------------|----------------------------------------------------|------|-----|
-| 2.6    | production  | [https://borchk.addi.dk/2.6/](https://borchk.addi.dk/2.6/)           | [https://borchk.addi.dk/2.6/?wsdl](https://borchk.addi.dk/2.6/?wsdl)           | [https://borchk.addi.dk/2.6/borchk.xsd](https://borchk.addi.dk/2.6/borchk.xsd) |
-| 2.6    | extern test | [https://borchk.addi.dk/test_2.6/](https://borchk.addi.dk/test_2.6/) | [https://borchk.addi.dk/test_2.6/?wsdl](https://borchk.addi.dk/test_2.6/?wsdl) | [https://borchk.addi.dk/test_2.6/borchk.xsd](https://borchk.addi.dk/test_2.6/borchk.xsd) |
-| 2.6    | staging     | [https://borchk.addi.dk/next_2.6/](https://borchk.addi.dk/next_2.6/) | [https://borchk.addi.dk/next_2.6/?wsdl](https://borchk.addi.dk/next_2.6/?wsdl) | [https://borchk.addi.dk/next_2.6/borchk.xsd](https://borchk.addi.dk/next_2.6/borchk.xsd) |
 | 3.0    | production  | [https://borchk.addi.dk/3.0/](https://borchk.addi.dk/3.0/)         | [https://borchk.addi.dk/3.0/soap?wsdl](https://borchk.addi.dk/3.0/soap?wsdl)                     | [https://borchk.addi.dk/3.0/soap?xsd=1](https://borchk.addi.dk/3.0/soap?xsd=1) |
 | 3.0    | extern test | [https://borchk.test.addi.dk/3.0/](https://borchk.test.addi.dk/3.0/) | [https://borchk.test.addi.dk/3.0/soap?wsdl](https://borchk.test.addi.dk/3.0/soap?wsdl) | [https://borchk.test.addi.dk/test_3.0/soap?xsd=1](https://borchk.test.addi.dk/3.0/soap?xsd=1) |
 | 3.0    | staging     | [https://borchk.stg.addi.dk/3.0/](https://borchk.stg.addi.dk/3.0/) | [https://borchk.stg.addi.dk/3.0/soap?wsdl](https://borchk.stg.addi.dk/3.0/soap?wsdl) | [https://borchk.stg.addi.dk/test_3.0/soap?xsd=1](https://borchk.stg.addi.dk/3.0/soap?xsd=1) |
-
-### 2.6
-
-Version 2.6 did nok introduce any new functionality but only removed the possibility to use http url parameters. This means that the following is no longer possible:
-* https://borchk.addi.dk/2.6?action=borrowerCheck&serviceRequester=AAAAAA&libraryCode=DK-BBBBBB&userId=CCCCCCCCCC&userPincode=DDDD
-
-Only soap xml is supported in this release.
-
-### 3.0
-
-Like 2.6 only soap xml is supported in 3.0.
-
-3.0 is a maintenance release which removed some no longer usable options from the xsd.
-
-The following options are no longer supported:
-* callback
-* outputType
-* debugging
 
 ## Service operations
 
