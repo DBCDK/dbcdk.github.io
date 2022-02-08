@@ -8,8 +8,6 @@ pages:
     url: Culrservice
   - title: Order Receipt
     url: Orderreceipt
-  - title: Saouservice
-    url: Saouservice
   - title: Open Agency
     url: OpenAgency
   - title: BorChk
