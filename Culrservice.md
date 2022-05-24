@@ -12,7 +12,6 @@ CULR (Core User Library Registry) receives local user identifiers from affiliate
 |---------|----------------------------------------------------|----------------|---------------|-------------|------|
 | 1.6     | https://culr.addi.dk/1.6/CulrWebService            | production     | 20211109      |             | https://culr.addi.dk/1.6/CulrWebService?wsdl
 | 1.6     | https://culrstaging.addi.dk/1.6/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.6/CulrWebService?wsdl
-| 1.5     | https://culr.addi.dk/1.5/CulrWebService            | production     | 20210623      |             | https://culr.addi.dk/1.5/CulrWebService?wsdl
 
 ## Changelist
 ### Version 1.5: Adds the method ***hasCulrAccount***.
