@@ -5,11 +5,11 @@ permalink: BorChk.html
 # Description of BorChk
 
 ## Introduction
-Lånertjek. Bruges til at tjekke om en bruger er indmeldt på et givent bibliotek, og om biblioteket er beliggende i brugerens hjemkommune. 
+Borrower check. Used to verify if a user is enrolled in a specific library and if the library is in the users municipality of residence.
 
-Dokumentation: [http://www.danbib.dk/lanertjek-fjernadgang](http://www.danbib.dk/lanertjek-fjernadgang)
+Documentation: [http://www.danbib.dk/lanertjek-fjernadgang](http://www.danbib.dk/lanertjek-fjernadgang)
 
-Current version is 3.1
+Current version is: 3.1
 
 ## Versions
 
