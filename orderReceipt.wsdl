@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://oss.dbc.dk/ns/orderReceipt" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" name="ReceiptServices" targetNamespace="http://oss.dbc.dk/ns/orderReceipt">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified">
+      <xs:import namespace="http://oss.dbc.dk/ns/orderReceipt" schemaLocation="orderReceipt.xsd"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ReceiptInputMessage">
+    <wsdl:part name="parameters" element="tns:receipt"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiptOutputMessage">
+    <wsdl:part name="parameters" element="tns:receiptResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ReceiptPortType">
+    <wsdl:operation name="receipt">
+      <wsdl:input wsaw:Action="http://oss.dbc.dk/ns/orderReceipt/Receipt" message="tns:ReceiptInputMessage"/>
+      <wsdl:output wsaw:Action="http://oss.dbc.dk/ns/orderReceipt/ReceiptResponse" message="tns:ReceiptOutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReceiptBinding" type="tns:ReceiptPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="receipt">
+      <soap:operation soapAction="http://oss.dbc.dk/ns/orderReceipt/Receipt" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderReceiptServices">
+    <wsdl:port name="ReceiptPort" binding="tns:ReceiptBinding">
+      <soap:address location="http://openreceipt.addi.dk/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
