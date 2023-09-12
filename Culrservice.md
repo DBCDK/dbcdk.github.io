@@ -10,25 +10,31 @@ CULR (Core User Library Registry) receives local user identifiers from affiliate
 
 | Version | Endpoint                                           | Environment    | Start of life | End of life | WSDL |
 |---------|----------------------------------------------------|----------------|---------------|-------------|------|
-| 1.6     | https://culr.addi.dk/1.6/CulrWebService            | production     | 20211109      |             | https://culr.addi.dk/1.6/CulrWebService?wsdl
-| 1.6     | https://culrstaging.addi.dk/1.6/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.6/CulrWebService?wsdl
+| 1.6     | https://culr.addi.dk/1.6/CulrWebService            | production     | 20211109      | 20231215    | https://culr.addi.dk/1.6/CulrWebService?wsdl
+| 1.6     | https://culrstaging.addi.dk/1.6/CulrWebService     | staging        |               | 20231215    | https://culrstaging.addi.dk/1.6/CulrWebService?wsdl
+| 1.7     | https://culr.addi.dk/1.7/CulrWebService            | production     | 20230911      |             | https://culr.addi.dk/1.7/CulrWebService?wsdl
+| 1.7     | https://culrstaging.addi.dk/1.7/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.7/CulrWebService?wsdl
+
+# **NOTE**
+**For correct behaviour with CICEROUID only use CULR 1.7**
 
 ## Changelist
 ### Version 1.5: Adds the method ***hasCulrAccount***.
 
-### Version 1.6: Adds the the new UID type ***CICEROUID***
+### Version 1.6: Adds the new UID type ***CICEROUID***
 
-The uid is to be used in conjunction with the local type and will behave the same way as CPR with local type users.
-The difference being that CICEROUID will not have persistent GUIDs, meaning that if you delete a CICEROUID account, the user will not get the same GUID when created with the same values. 
+### Version 1.7: Adds the new UID type ***SYSTEMUID***  
+
+The CICEROUID and SYSTEMUID uid is used in conjunction with the local type and behaves the same way as CPR with local type users.
+CICEROUID and SYSTEMUID uid type have persistent GUIDs.
 
 The CICEROUID change also changes the API of the webservice. The following operations is affected.
 
 ***getAccountsByGlobalId***
 ***createAccount***
 
-Both operations now accepts a globalUID complex type, and the uidType of the globalUID has been expanded to accept CICEROUID as well as CPR.
+Both operations now accepts a globalUID complex type, and the uidType of the globalUID has been expanded to accept CICEROUID and SYSTEMUID as well as CPR.
 All other operations should remain as before.
-  
 
 ## System Architecture
 CULR consists of three components:
