@@ -20,8 +20,8 @@ CheckOrderPolicy checks that a given agency will allow for enduser ill on the ma
 
 PlaceOrder creates an order in the orderSystem. It implicitly calls checkOrderPolicy to test if the given agency accepts ill on the pid supplied.
 
-Web Service: [https://openorder.addi.dk/](https://openorder.addi.dk/) <br/>
-Example client: [https://openorder.addi.dk/copa-rs/](https://openorder.addi.dk/copa-rs/)
+WSDL: https://openorder.addi.dk/3.0?wsdl <br/>
+XSD: https://openorder.addi.dk/3.0?xsd=1
 
 ## License Terms
 Use of the web service requires [subscription of a DanBib license](http://www.dbc.dk/produkter-services/databaser_tjenester_produktoversigt/danbib) (Netpunkt password).
