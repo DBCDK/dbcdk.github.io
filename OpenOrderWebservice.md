@@ -20,8 +20,29 @@ CheckOrderPolicy checks that a given agency will allow for enduser ill on the ma
 
 PlaceOrder creates an order in the orderSystem. It implicitly calls checkOrderPolicy to test if the given agency accepts ill on the pid supplied.
 
-WSDL: https://openorder.addi.dk/3.0?wsdl <br/>
-XSD: https://openorder.addi.dk/3.0?xsd=1
+WSDL: [https://openorder.addi.dk/3.0?wsdl](https://openorder.addi.dk/3.0?wsdl) <br/>
+XSD: [https://openorder.addi.dk/3.0?xsd=1](https://openorder.addi.dk/3.0?xsd=1)
+
+Possible responses from the two operations checkOrderPolicy and placeOrder:
+
+- `OWNED_ACCEPTED`:                   item available at pickupAgency, order accepted
+- `NOT_OWNED_ILL_LOC`:                item not available at pickupAgency, item localised for ILL
+- `OWNED_WRONG_MEDIUM_TYPE`:          item available at pickupAgency, order of mediumType not accepted
+- `NOT_OWNED_WRONG_ILL_MEDIUM_TYPE`:  item not available at pickupAgency, ILL of mediumType not accepted
+- `NOT_OWNED_NO_ILL_LOC`:             item not available at pickupAgency, item not localised for ILL
+- `OWNED_OWN_CATALOGUE`:              item available at pickupAgency, item may be ordered through the library's catalogue
+- `SERVICE_UNAVAILABLE`:              service unavailable
+- `UNKNOWN_PICKUP_AGENCY`:            pickupAgency not found
+- `UNKNOWN_USER`:                     user not found
+- `INVALID_ORDER`:                    Order does not validate (only placeOrder)
+- `ORS_ERROR`:                        Error sending order to ORS (only placeOrder)
+- `NO_SERVICE_REQUESTER`:             serviceRequester is obligatory
+- `AUTHENTICATION_ERROR`:             authentication error
+- `INVALID_NEED_BEFORE_DATE`          the need before date is either in an invalid data format or the date is before now
+
+**NB!** The XSD uses a combination of lowercase, uppercase, underscore and camelcase, but the service is implemented in Java, and the possible replies as Java object enum types (all uppercase and camelcase replaced by and underscore - e.g. `owned_wrong_mediumType` → `OWNED_WRONG_MEDIUM_TYPE`).
+
+The following possibility from the XSD is no longer used: `not_owned_accepted_by_consortia`
 
 ## License Terms
 Use of the web service requires [subscription of a DanBib license](http://www.dbc.dk/produkter-services/databaser_tjenester_produktoversigt/danbib) (Netpunkt password).
