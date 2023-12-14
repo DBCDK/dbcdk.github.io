@@ -11,7 +11,7 @@ Documentation: [http://www.danbib.dk/lanertjek-fjernadgang](http://www.danbib.dk
 
 Current version is: 3.1
 
-Version 3.0 will be end of life 30/11-2023.
+Version 3.0 is end of life 30/11-2023 and is no longer available.
 
 ## Versions
 
@@ -20,9 +20,6 @@ Version 3.0 will be end of life 30/11-2023.
 | 3.1    | production  |             | [https://borchk.addi.dk/3.1/](https://borchk.addi.dk/3.1/)         | [https://borchk.addi.dk/3.1/soap?wsdl](https://borchk.addi.dk/3.1/soap?wsdl)                     | [https://borchk.addi.dk/3.1/soap?xsd=1](https://borchk.addi.dk/3.1/soap?xsd=1) |
 | 3.1    | extern test |             | [https://borchk.test.addi.dk/3.1/](https://borchk.test.addi.dk/3.1/) | [https://borchk.test.addi.dk/3.1/soap?wsdl](https://borchk.test.addi.dk/3.1/soap?wsdl) | [https://borchk.test.addi.dk/test_3.1/soap?xsd=1](https://borchk.test.addi.dk/3.1/soap?xsd=1) |
 | 3.1    | staging     |             | [https://borchk.stg.addi.dk/3.1/](https://borchk.stg.addi.dk/3.1/) | [https://borchk.stg.addi.dk/3.1/soap?wsdl](https://borchk.stg.addi.dk/3.1/soap?wsdl) | [https://borchk.stg.addi.dk/test_3.1/soap?xsd=1](https://borchk.stg.addi.dk/3.1/soap?xsd=1) |
-| 3.0    | production  | 30/11-2023  | [https://borchk.addi.dk/3.0/](https://borchk.addi.dk/3.0/)         | [https://borchk.addi.dk/3.0/soap?wsdl](https://borchk.addi.dk/3.0/soap?wsdl)                     | [https://borchk.addi.dk/3.0/soap?xsd=1](https://borchk.addi.dk/3.0/soap?xsd=1) |
-| 3.0    | extern test | 30/11-2023  | [https://borchk.test.addi.dk/3.0/](https://borchk.test.addi.dk/3.0/) | [https://borchk.test.addi.dk/3.0/soap?wsdl](https://borchk.test.addi.dk/3.0/soap?wsdl) | [https://borchk.test.addi.dk/test_3.0/soap?xsd=1](https://borchk.test.addi.dk/3.0/soap?xsd=1) |
-| 3.0    | staging     | 30/11-2023  | [https://borchk.stg.addi.dk/3.0/](https://borchk.stg.addi.dk/3.0/) | [https://borchk.stg.addi.dk/3.0/soap?wsdl](https://borchk.stg.addi.dk/3.0/soap?wsdl) | [https://borchk.stg.addi.dk/test_3.0/soap?xsd=1](https://borchk.stg.addi.dk/3.0/soap?xsd=1) |
 
 ## Changelist
 
