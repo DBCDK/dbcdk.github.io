@@ -10,8 +10,6 @@ CULR (Core User Library Registry) receives local user identifiers from affiliate
 
 | Version | Endpoint                                           | Environment    | Start of life | End of life | WSDL |
 |---------|----------------------------------------------------|----------------|---------------|-------------|------|
-| 1.6     | https://culr.addi.dk/1.6/CulrWebService            | production     | 20211109      | 20231215    | https://culr.addi.dk/1.6/CulrWebService?wsdl
-| 1.6     | https://culrstaging.addi.dk/1.6/CulrWebService     | staging        |               | 20231215    | https://culrstaging.addi.dk/1.6/CulrWebService?wsdl
 | 1.7     | https://culr.addi.dk/1.7/CulrWebService            | production     | 20230911      |             | https://culr.addi.dk/1.7/CulrWebService?wsdl
 | 1.7     | https://culrstaging.addi.dk/1.7/CulrWebService     | staging        |               |             | https://culrstaging.addi.dk/1.7/CulrWebService?wsdl
 
