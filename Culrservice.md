@@ -43,10 +43,6 @@ A web service that handles the connection between the affiliated institutions, s
 
 A database which stores the submitted data from the affiliated institutions which are data providers
 
-An adminstration system: CULR access for data providers (or brokers acting
-on behalf of one or more providers) and services are administered through
-DBC’ VIP-base (https://vip.dbc.dk) in section J. CULR profile.
-
 ## Definitions
 A *Service* uses CULR to obtain user information: Potential services could
 for instance be end user access components or common digital library
@@ -55,10 +51,8 @@ delete, or modify data.
 
 A *Provider* is a provider of data to CULR, ie. an institution (such as a
 library) that have user accounts attached. It may be a public library, an
-educational library or a research library. Providers (or brokers acting on
-behalf of one or more providers) are set up in CULR administration system
-(DBC VIP base) using the 6-digit part of their ISIL number. Providers are
-allowed to create, delete, or modify data.
+educational library or a research library. Brokers can act on behalf of one
+or more providers. Providers are allowed to create, delete, or modify data.
 
 An *Account* contains information about a user's registration with a given
 provider. Account information consists of userIdType (CPR, LOCAL, or
